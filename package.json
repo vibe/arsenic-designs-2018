@@ -1,0 +1,12 @@
+{
+  "scripts": {
+    "build": "ream build",
+    "start": "ream start",
+    "dev": "ream dev"
+  },
+  "dependencies": {
+    "ream": "^2.0.0-alpha.9",
+    "ream-renderer-vue": "^2.0.0-alpha.6",
+    "vuex": "^3.0.1"
+  }
+}
