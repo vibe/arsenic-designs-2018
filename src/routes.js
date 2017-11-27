@@ -5,7 +5,10 @@ async () => {
 };
 
 const routes = [
-  { path: "/", name: "home", component: PageView("Home") },
+  { path: "/", name: "designs", component: PageView("Home") },
+  { path: "/user_interface", name: "ui", component: PageView("UI") },
+  { path: "/logo_design", name: "logos", component: PageView("Logos") },
+  { path: "/projects", name: "projects", component: PageView("Projects") },
 ];
 
 export default routes;

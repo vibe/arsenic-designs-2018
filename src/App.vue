@@ -15,6 +15,7 @@
         height: 100%;
         min-height: 100%;
         max-height: 100%;
+        
     }
     body {
         background: #FAFBFC;
@@ -33,4 +34,14 @@
     #app {
         height: 100%;
     }
+    @font-face {
+    font-family: 'Ayuthaya';
+    src: url('/Ayuthaya.eot');
+    src: url('/Ayuthaya.eot?#iefix') format('embedded-opentype'),
+        url('/Ayuthaya.woff') format('woff'),
+        url('/Ayuthaya.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 </style>
