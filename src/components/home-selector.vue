@@ -35,7 +35,7 @@ export default {
         {
           category: "logo_design",
           slug: "logos",
-          name: "ui",
+          name: "logos",
         },
         {
           category: "projects",
