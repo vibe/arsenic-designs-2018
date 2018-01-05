@@ -1,8 +1,9 @@
 {
   "scripts": {
     "build": "ream build",
-    "start": "ream start",
-    "dev": "ream dev"
+    "prestart": "ream build",
+    "start": "ream start --host 0.0.0.0 --port 80",
+    "dev": "ream dev --host 0.0.0.0 --port 80"
   },
   "dependencies": {
     "ream": "^2.0.0-alpha.9",

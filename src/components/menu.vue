@@ -38,7 +38,7 @@ export default {
   left: 0;
   top: -50px;
   background: #000;
-  transition: all 1s;
+  transition: all .5s;
   height: 0;
   overflow: hidden;
 }
@@ -63,5 +63,10 @@ a {
 }
 .activeMenu {
     height: 260px;
+}
+@media all and (max-width: 500px) {
+    ul {
+        padding-top: 26px;
+    }
 }
 </style>

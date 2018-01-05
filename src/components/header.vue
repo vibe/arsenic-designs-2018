@@ -1,6 +1,6 @@
 <template>
   <header>
-      <h1>Aresnic<div @click="toggleMenu"><span>.{{ currentRoute }}</span><DropDownMenu></DropDownMenu></div></h1>
+      <h1>Arsenic<div @click="toggleMenu"><span>.{{ currentRoute }}</span><DropDownMenu></DropDownMenu></div></h1>
   </header>
 </template>
 <script>
@@ -32,17 +32,22 @@ header {
     width: 100%;
     text-align: center;
     font-family: 'Ayuthaya';
-    overflow: hidden;
+    overflow: visible;
 }
 h1 {
     padding: 0;
     margin: 0;
     padding-top: 50px;
-    padding-bottom: 175px;
+    padding-bottom: 50px;
 }
 div {
     display: inline-block;
     position: relative;
     cursor: pointer;
+}
+@media all and (max-width: 500px) {
+    h1 {
+        font-size: 1.5em;
+    }
 }
 </style>

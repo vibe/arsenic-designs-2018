@@ -1,0 +1,24 @@
+{
+    "projects": [
+        {
+            "name": "Assryian Flag",
+            "alias": "_assyrian.flag.emoji",
+            "image": "assyrianflag_designs"
+        },
+        {
+            "name": "User Interface",
+            "alias": "_user.interface",
+            "image": "ui_designs"
+        },
+        {
+            "name": "Logo Designs",
+            "alias": "_logo",
+            "image": "logo_designs"
+        },
+        {
+            "name": "After Earth",
+            "alias": "_after_earth",
+            "image": "afterearth_designs"
+        }
+    ]
+}

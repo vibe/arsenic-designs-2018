@@ -1,0 +1,9 @@
+{
+  "name": "ArsenicDesigns",
+  "restart": "on-failure:2",
+  "domain": "arsenicdesigns.com, www.arsenicdesigns.com",
+  "project": "ad2017",
+  "env": {
+    "PORT": 80
+  }
+}

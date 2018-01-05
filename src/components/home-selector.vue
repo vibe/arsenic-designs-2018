@@ -1,7 +1,7 @@
 <template>
   <section class="home-menu">
       <ul>
-          <li class="your-element" v-for="(option, index) in options" :key="index">
+          <li class="home-menu-item" v-for="(option, index) in options" :key="index">
                 <router-link :to=" { name: option.slug }">
                     <span class="slug">.{{option.name}}</span>
                     <span class="category">{{option.category}}</span>
@@ -16,10 +16,10 @@ import VanillaTilt from "../libs/swag";
 
 export default {
   mounted() {
-    VanillaTilt.init(document.querySelectorAll(".your-element a"), {
+    VanillaTilt.init(document.querySelectorAll(".home-menu-item a"), {
       max: 10,
       speed: 400,
-      scale: 1.08,
+      scale: 1.05,
       glare: true,
       "max-glare": 0.1
     });
@@ -87,7 +87,7 @@ span.slug {
   padding-top: 130%;
   width: 100%;
   align-self: flex-end;
-  font-size: 4.1vw;
+  font-size: 3vw;
 }
 @media all and (max-width: 1024px) {
   li {

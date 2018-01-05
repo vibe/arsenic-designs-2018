@@ -84,6 +84,10 @@ var VanillaTilt = (function () {
       onMouseEnter(event) {
         this.updateElementPosition();
         this.element.style.willChange = "transform";
+        if(this.element.hasAttribute("data-swag")) {
+          this.element.style.boxShadow = `0 20px 50px 0px ${this.element.getAttribute('data-swag')}, 0 50px 100px 0 ${this.element.getAttribute('data-swag').replace('.4', '.2')}`
+          this.element.style.zIndex = '9999';          
+        }
         this.setTransition();
       }
     
@@ -98,7 +102,15 @@ var VanillaTilt = (function () {
     
       onMouseLeave(event) {
         this.setTransition();
-    
+        if(this.element.hasAttribute("data-swag")) {
+         if(this.element.getAttribute('data-swag') ===  'rgba(51, 51, 51, 0.4)')
+          {
+            this.element.style.boxShadow = '';
+          } else {
+            this.element.style.boxShadow = `0 2px 9px rgba(14, 21, 47, 0.25)`            
+          }
+          this.element.style.zIndex = '1';
+        }
         if (this.settings.reset) {
           requestAnimationFrame(this.resetBind);
         }
